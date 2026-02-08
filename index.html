@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Country Comparison Tool | Population, GDP, Military</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Compare countries by population, GDP, military power, gold reserves, companies, weapons and rankings.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>🌍 Country Compare</h1>
+
+<select onchange="setLang(this.value)">
+<option value="en">English</option>
+<option value="hi">हिंदी</option>
+</select>
+
+<div class="inputs">
+<input id="c1" placeholder="Type first country">
+<div id="suggestions1" class="suggestions"></div>
+<input id="c2" placeholder="Type second country">
+<div id="suggestions2" class="suggestions"></div>
+<button onclick="compare()">🔍 Compare</button>
+<button onclick="dark()">🌙</button>
+</div>
+
+<div id="result"></div>
+<canvas id="chart" height="200"></canvas>
+
+<div class="card">
+<h3>🏅 Who is stronger?</h3>
+<button onclick="vote('A')">Country 1</button>
+<button onclick="vote('B')">Country 2</button>
+<p id="voteResult"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/compare.js"></script>
+</body>
+</html>
