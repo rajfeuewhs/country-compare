@@ -1,0 +1,17 @@
+{
+  "India": {
+    "military": "Strong"
+  },
+  "Pakistan": {
+    "military": "Medium"
+  },
+  "United States": {
+    "military": "Very Strong"
+  },
+  "China": {
+    "military": "Very Strong"
+  },
+  "Russia": {
+    "military": "Very Strong"
+  }
+}
