@@ -4,12 +4,13 @@
 <head>
 <title>Country Comparison Tool | Population, GDP, Military</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Compare countries by population, GDP, military power, gold reserves, companies, weapons and rankings.">
+<meta name="description" content="Compare population, GDP, military power, rankings and insights of any country.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <h1>🌍 Country Compare</h1>
+<p class="tagline">Compare population, GDP, military power & more — in seconds ⚡</p>
 
 <select onchange="setLang(this.value)">
 <option value="en">English</option>
@@ -34,6 +35,10 @@
 <button onclick="vote('B')">Country 2</button>
 <p id="voteResult"></p>
 </div>
+
+<footer class="footer">
+<p>© 2026 Country Compare • Data from public sources • Educational use</p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/lang.js"></script>
