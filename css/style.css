@@ -1,153 +1,27 @@
-*{
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-/* 🌈 COLOURFUL BACKGROUND */
-body{
-  margin:0;
-  text-align:center;
-  min-height:100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-}
-
-/* TITLE */
-h1{
-  margin:16px 0;
-  color:#ffffff;
-}
-
-/* INPUT AREA */
-.inputs{
-  padding:12px;
-}
-
-.inputs input{
-  width:90%;
-  max-width:420px;
-  padding:12px;
-  margin:6px auto;
-  border-radius:10px;
-  border:none;
-  font-size:16px;
-  display:block;
-}
-
-button{
-  padding:12px 26px;
-  margin:6px;
-  border:none;
-  border-radius:10px;
-  background:#ff7a18;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
-}
-
-/* MAIN CARD */
-.card{
-  background:#ffffff;
-  margin:18px auto;
-  padding:18px;
-  border-radius:18px;
-  max-width:950px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* COMPARE LAYOUT */
-.compare-box{
-  display:flex;
-  gap:18px;
-  align-items:stretch;
-}
-
-/* COUNTRY CARD */
-.country{
-  width:50%;
-  background:#f9faff;
-  border-radius:16px;
-  padding:16px;
-  text-align:left;
-}
-
-/* COUNTRY NAME */
-.country h3{
-  text-align:center;
-  margin:8px 0 12px;
-}
-
-/* 🇺🇳 FLAG — 50% SIZE */
-.country img{
-  width:50%;
-  display:block;
-  margin demonstrate: 0 auto;
-  border-radius:10px;
-  margin-bottom:12px;
-}
-
-/* DATA LINES (POPULATION, ARMY, GOLD ETC) */
-.country div{
-  margin:6px 0;
-  font-size:15px;
-  padding:6px 10px;
-  background:#eef2ff;
-  border-radius:8px;
-}
-
-/* CENTER DIVIDER */
-.divider{
-  width:2px;
-  background: linear-gradient(#667eea, #ff7a18);
-  border-radius:10px;
-}
-
-/* 🌙 DARK MODE SUPPORT */
-.dark body{
-  background: linear-gradient(135deg, #111, #333);
-}
-
-.dark .card{
-  background:#222;
-  color:white;
-}
-
-.dark .country{
-  background:#2a2a2a;
-}
-
-.dark .country div{
-  background:#333;
-}
-
-/* AUTOCOMPLETE */
-.suggestions{
-  background:white;
-  max-width:420px;
-  margin:0 auto;
-  border-radius:10px;
-  box-shadow:0 6px 14px rgba(0,0,0,.2);
-  text-align:left;
-}
-
-.suggestions div{
-  padding:10px;
-  cursor:pointer;
-}
-
-.suggestions div:hover{
-  background:#f0f2ff;
-}
-
-/* 📱 MOBILE RESPONSIVE */
+*{box-sizing:border-box;font-family:Arial;}
+body{margin:0;background:#f4f6fb;text-align:center;}
+h1{margin:15px 0;}
+.tagline{margin-top:-5px;color:#555;font-size:15px;}
+.inputs input{width:90%;max-width:420px;padding:12px;margin:6px auto;display:block;}
+button{padding:12px 24px;margin:6px;border:none;border-radius:10px;background:#4a6cf7;color:#fff;}
+.card{background:#fff;margin:15px auto;padding:15px;border-radius:16px;max-width:900px;box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.compare-box{display:flex;gap:16px;}
+.country{width:50%;background:#f9faff;border-radius:14px;padding:14px;text-align:left;}
+.country img{width:50%;display:block;margin:0 auto;border-radius:10px;}
+.divider{width:2px;background:#999;}
+.ai-box{background:#eef2ff;border-left:5px solid #4a6cf7;}
+.footer{margin-top:40px;padding:15px;background:#eee;font-size:13px;color:#555;}
 @media(max-width:700px){
-  .compare-box{
-    flex-direction:column;
-  }
-  .divider{
-    width:100%;
-    height:2px;
-  }
-  .country{
-    width:100%;
-  }
+.compare-box{flex-direction:column}
+.divider{width:100%;height:2px}
+.country{width:100%}
 }
+.suggestions{background:#fff;max-width:420px;margin:0 auto;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.15);text-align:left;}
+.suggestions div{padding:10px;cursor:pointer;}
+.suggestions div:hover{background:#eee;}
+.dark body{background:#111;color:#fff;}
+.dark .card{background:#222;}
+.dark .ai-box{background:#1b1b2f;}
+.dark .footer{background:#111;color:#aaa;}
+.dark .tagline{color:#ccc;}
